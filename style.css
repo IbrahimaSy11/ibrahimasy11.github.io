@@ -6,6 +6,18 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* ANIMATION */
+ @keyframes goUp {
+  from{
+    transform:translateY(0) ;
+  }
+
+  to{
+    transform: translateY(-5px);
+  }
+  
+ }
+
 header > nav > ul {
   list-style: none;
 }
@@ -211,6 +223,11 @@ figure {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 20px;
+
+}
+.project-card:hover{
+ animation: goUp  0.2s  ease-in forwards;
+
 }
 
 .project-card h3 {
